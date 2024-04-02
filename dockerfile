@@ -18,7 +18,7 @@ COPY . .
 COPY --from=dependencies /usr/src/app/node_modules ./node_modules
 
 RUN pnpm build
-RUN pnpm prune --build
+RUN pnpm prune --prod
 
 FROM node:20-alpine3.19 AS deploy
 
