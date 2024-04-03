@@ -10,6 +10,8 @@ services:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=admin
       - POSTGRES_DB=passin
+    volumes:
+      - "C:/Users/arthu/Documents/Estudos/Programacao/Rocketseat/NLWs/pass-in-deploy/db:/var/lib/postgresql/data"
     networks:
       - passin
     healthcheck:
@@ -36,3 +38,6 @@ services:
 networks:
   passin:
     driver: bridge
+
+volumes:
+  db:
