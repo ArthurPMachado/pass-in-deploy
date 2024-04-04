@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: arthurpmachadodev/nlw.service.passin
   pullPolicy: Always
-  tag: 38356d2
+  tag: 7c8bca1
   port: 3333
 imagePullSecrets: []
 nameOverride: ''
