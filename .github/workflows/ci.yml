@@ -42,5 +42,5 @@ jobs:
         valueFile: 'deploy/values.yaml'
         propertyPath: 'image.tag'
         value: ${{ steps.generate_sha.outputs.sha }}
-        commitsChange: true
+        commitChange: true
         message: "new: Update tag in values helm"
