@@ -10,3 +10,4 @@ metadata:
 stringData:
   type: git
   url: git@github.com:ArthurPMachado/pass-in-deploy.git
+  sshPrivateKey: | 
