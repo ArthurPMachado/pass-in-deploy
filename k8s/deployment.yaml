@@ -19,6 +19,11 @@ spec:
       containers:
       - name: passin
         image: arthurpmachadodev/nlw.service.passin:cd23a39
+        env:
+        - name: DATABASE_URL
+          value: "postgresql://doadmin:AVNS_JPjz6J2fSNa0rtlKByM@pass-in-do-user-16227048-0.c.db.ondigitalocean.com:25060/pass-in?sslmode=require"
+        - name: API_BASE_URL
+          value: "http://localhost:3333"
         ports:
         - containerPort: 3333
         resources:
