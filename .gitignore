@@ -9,3 +9,6 @@ infra-as-code-database/terraform.tfvars
 infra-as-code-database/.terraform/*
 infra-as-code-database/.terraform.lock.hcl
 infra-as-code-database/terraform.tfstate
+
+# Kubernetes
+k8s/secret.yaml
