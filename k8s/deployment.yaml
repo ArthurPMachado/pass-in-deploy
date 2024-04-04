@@ -23,7 +23,10 @@ spec:
         - name: DATABASE_URL
           value: "postgresql://doadmin:AVNS_JPjz6J2fSNa0rtlKByM@pass-in-do-user-16227048-0.c.db.ondigitalocean.com:25060/pass-in?sslmode=require"
         - name: API_BASE_URL
-          value: "http://localhost:3333"
+          valueFrom:
+            configMapKeyRef:
+              name: passin-env
+              key: url
         ports:
         - containerPort: 3333
         resources:
