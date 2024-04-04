@@ -1,2 +1,2 @@
 # pass-in-deploy
-Participant management app deployment using Terraform, Kubernetes, Lens and K3D
+Participant management app deployment using Terraform, Kubernetes, Lens, K3D, Helm and Argo
